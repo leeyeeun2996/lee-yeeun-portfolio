@@ -161,8 +161,8 @@
 .home-page .motion-link{top:82.15%;}
 
 .about-page .about-bottom-cover-right{
-  width:24%;
-  height:10.6%;
+  width:8%;
+  height:5%;
 }
 .about-page .marketing-link,
 .about-page .next-link{
@@ -457,4 +457,22 @@
 @media(max-width:900px){
   .marketing-page .marketing-nav{gap:14px !important;font-size:12px !important;}
   .marketing-page .marketing-nav a{font-size:12px !important;}
+}
+
+/* About: cover only the NEXT text embedded in about.png; keep both HTML buttons visible */
+.about-page .about-bottom-cover-right{
+  right:0;
+  bottom:0;
+  width:15%;
+  height:6.2%;
+  z-index:40;
+}
+.about-page .marketing-link,
+.about-page .next-link{
+  display:block!important;
+  visibility:visible!important;
+  opacity:1!important;
+  color:var(--blue)!important;
+  font-size:.9vw!important;
+  z-index:70!important;
 }
